@@ -132,8 +132,7 @@ bool SVGParser::parseFile(const std::string& filename) {
         }
     }
 
-    // Kiểm tra tính hợp lệ cơ bản của file: kiểm tra thẻ <svg> mở/đóng (Tùy chọn)
-    // Trong triển khai đơn giản này, ta chỉ tập trung vào việc trích xuất các phần tử hình học.
+    // Kiểm tra tính hợp lệ cơ bản của file: kiểm tra thẻ <svg> mở/đóng
 
     if (elements_.empty()) {
         std::cout << "Cảnh báo: Không tìm thấy phần tử hình học SVG nào trong file." << std::endl;

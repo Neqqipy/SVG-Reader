@@ -21,13 +21,13 @@ private:
 
     /**
      * @brief HÀM TIỆN ÍCH: Phân tích một dòng chứa tag/thuộc tính
-     * @param line Chuỗi chứa tag SVG (ví dụ: <circle cx="10" r="5" fill="red"/>)
+     * @param line Chuỗi chứa tag SVG
      * @return Một đối tượng SVGElementPtr hoặc nullptr nếu thất bại.
      */
     SVGElementPtr parseElementFromLine(const std::string& line);
 
     /**
-     * @brief HÀM TIỆN ÍCH: Trích xuất tên tag và map thuộc tính từ một chuỗi (ví dụ: <rect x="0" y="0"/>)
+     * @brief HÀM TIỆN ÍCH: Trích xuất tên tag và map thuộc tính từ một chuỗi
      * @param line Chuỗi đầu vào.
      * @param tagName Chuỗi đầu ra (tên tag).
      * @param attributes Map đầu ra (các thuộc tính).
@@ -47,7 +47,6 @@ public:
 
     /**
      * @brief Kiểm tra tính hợp lệ cơ bản của file (chỉ kiểm tra việc mở/đọc file thành công)
-     * (Việc kiểm tra cú pháp SVG phức tạp hơn sẽ được thực hiện trong parseElementFromLine).
      * @param filename Tên file.
      * @return true nếu file tồn tại và có thể mở.
      */
